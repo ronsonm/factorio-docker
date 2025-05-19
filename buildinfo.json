@@ -312,8 +312,14 @@
   "2.0.50": {
     "sha256": "81d4aec735473c5bd2c87f09abcd793c31cb9a07d9fdf3c3d7275c78ebe4bc18",
     "tags": [
-      "latest",
       "2.0.50"
+    ]
+  },
+  "2.0.51": {
+    "sha256": "fc940dea67d25d3fd403531520e8afda2779ff1fa8050f535ac1351b7873a070",
+    "tags": [
+      "latest",
+      "2.0.51"
     ]
   }
 }
