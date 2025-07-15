@@ -1,18 +1,12 @@
 {
-  "2.0.55": {
-    "sha256": "ef12a54d1556ae1f84ff99edc23706d13b7ad41f1c02d74ca1dfadf9448fcbae",
-    "tags": [
-      "stable",
-      "stable-2.0.55",
-      "2",
-      "2.0",
-      "2.0.55"
-    ]
-  },
   "2.0.60": {
     "sha256": "69b5be1a867fd99524f9914dfee900a1ac386cf4e74c4a63768c05dc4d2b2b0b",
     "tags": [
       "latest",
+      "stable",
+      "stable-2.0.60",
+      "2",
+      "2.0",
       "2.0.60"
     ]
   }
