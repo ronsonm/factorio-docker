@@ -6,8 +6,8 @@ services:
       args:
         # Check buildinfo.json for supported versions and SHAs
         # https://github.com/factoriotools/factorio-docker/blob/master/buildinfo.json
-        - VERSION=2.0.60
-        - SHA256=69b5be1a867fd99524f9914dfee900a1ac386cf4e74c4a63768c05dc4d2b2b0b
+        - VERSION=2.0.66
+        - SHA256=f1b3976eacc4e233800d399d90006c356fa366f5d64341c504c95c0cba321c06
     ports:
       - "34197:34197/udp"
       - "27015:27015/tcp"
