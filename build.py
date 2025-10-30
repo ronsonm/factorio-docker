@@ -27,7 +27,7 @@ def create_builder(build_dir, builder_name, platform):
 
 
 def build_and_push_multiarch(build_dir, build_args, push, builder_suffix=""):
-    builder_name = f"factoriotools{builder_suffix}-multiarch"
+    builder_name = f"ronsonm{builder_suffix}-multiarch"
     platform = ",".join(PLATFORMS)
     create_builder(build_dir, builder_name, platform)
     build_command = ["docker", "buildx", "build", "--platform", platform, "--builder", builder_name] + build_args
@@ -52,7 +52,7 @@ def build_singlearch(build_dir, build_args, image_type="regular"):
 def push_singlearch(tags):
     for tag in tags:
         try:
-            subprocess.run(["docker", "push", f"factoriotools/factorio:{tag}"],
+            subprocess.run(["docker", "push", f"ronsonm/factorio:{tag}"],
                             check=True)
         except subprocess.CalledProcessError:
             print("Docker push failed")
@@ -64,7 +64,7 @@ def build_and_push(sha256, version, tags, push, multiarch, dockerfile="Dockerfil
     shutil.copytree("docker", build_dir)
     build_args = ["-f", dockerfile, "--build-arg", f"VERSION={version}", "--build-arg", f"SHA256={sha256}", "."]
     for tag in tags:
-        build_args.extend(["-t", f"factoriotools/factorio:{tag}"])
+        build_args.extend(["-t", f"ronsonm/factorio:{tag}"])
     
     image_type = "rootless" if "rootless" in dockerfile.lower() else "regular"
     
