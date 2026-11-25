@@ -6,7 +6,7 @@
 [中文](./README_zh_CN.md)
 
 <!-- start autogeneration tags -->
-* `latest, 2.0.76`
+* `latest, 2.1.25`
 <!-- end autogeneration tags -->
 
 ## Tag descriptions
